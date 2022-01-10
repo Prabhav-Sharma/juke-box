@@ -1,10 +1,11 @@
+//ES6 Version Code
 import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  var [listItems, setListItems] = useState([]);
+  let [listItems, setListItems] = useState([]);
 
-  var pop = [
+  const pop = [
     "Charlie Puth: We Don't Talk Anymore ",
     "Sasha Sloan: When Was It Over ",
     "Cage The Elephant: Telescope",
@@ -12,7 +13,7 @@ export default function App() {
     "Hozier: Work Song"
   ];
 
-  var rock = [
+  const rock = [
     "Guns N' Roses: Sweet Child O' Mine ",
     "Nirvana: Smells Like Teen Spirit ",
     "Queen: Bohemian Rhapsody",
@@ -20,7 +21,7 @@ export default function App() {
     "Linkin Park: Numb"
   ];
 
-  var bollywood = [
+  const bollywood = [
     "A. R. Rahman: Nadaan Parindey ",
     "Papon and Sunidhi Chauhan: Kyon ",
     "Arijit Singh: Kabira",
@@ -28,7 +29,7 @@ export default function App() {
     "Shantanu Moitra: Give Me Some Sunshine"
   ];
 
-  var hip = [
+  const hip = [
     "Eminem: Walk On Water ",
     "K'Naan: Wavin' Flag ",
     "Post Malone ft. Dolla $ign: Psychp",
@@ -36,9 +37,7 @@ export default function App() {
     "Fort Minor: Remember The Name"
   ];
 
-  function clickHandler(genre) {
-    setListItems(genre);
-  }
+  const clickHandler = (genre) => setListItems(genre);
 
   return (
     <div className="App">
